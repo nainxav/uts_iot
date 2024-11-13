@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto p-6">
+        <h2 class="text-3xl font-semibold text-center mb-6">DHT Dashboard</h2>
+        
+        <div id="temperature-info" class="bg-gray-800 p-4 rounded-md shadow-lg mb-6">
+            <p class="text-lg"><b>Max Temperature:</b> <span id="max-temp"></span> °C at <span id="max-timestamp"></span></p>
+            <p class="text-lg"><b>Min Temperature:</b> <span id="min-temp"></span> °C at <span id="min-timestamp"></span></p>
+            <p class="text-lg"><b>Max Humidity:</b> <span id="max-humid"></span> % at <span id="max-humid-timestamp"></span></p>
+            <p class="text-lg"><b>Min Humidity:</b> <span id="min-humid"></span> % at <span id="min-humid-timestamp"></span></p>
+        </div>
+        
+        <canvas id="temperatureChart" class="bg-gray-800 p-4 rounded-md shadow-lg mb-6"></canvas>
+
+    <div class="my-6"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
